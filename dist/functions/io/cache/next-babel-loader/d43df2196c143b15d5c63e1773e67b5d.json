@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { combineReducers } from 'redux';\nimport data from './data';\nimport files from './files';\nimport form from './form';\nexport default combineReducers({\n  data: data,\n  files: files,\n  form: form\n});","map":null,"metadata":{},"sourceType":"module"}

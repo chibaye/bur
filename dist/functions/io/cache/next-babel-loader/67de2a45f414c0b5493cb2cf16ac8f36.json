@@ -1,0 +1,1 @@
+{"ast":null,"code":"export var FORM = {\n  FIELD: 'FIELD',\n  FILES: 'FILES',\n  INPUT: 'INPUT',\n  LOADING: 'LOADING'\n};","map":null,"metadata":{},"sourceType":"module"}

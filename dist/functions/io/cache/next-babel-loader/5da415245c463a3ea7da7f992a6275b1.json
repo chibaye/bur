@@ -1,0 +1,1 @@
+{"ast":null,"code":"export default {\n  MuiAppBar: {\n    elevation: 0,\n    position: 'relative'\n  },\n  MuiContainer: {\n    maxWidth: 'md'\n  },\n  MuiListItem: {\n    dense: true,\n    disableGutters: true\n  },\n  MuiTextField: {\n    fullWidth: true\n  },\n  MuiToolbar: {\n    disableGutters: true\n  }\n};","map":null,"metadata":{},"sourceType":"module"}
