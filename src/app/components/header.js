@@ -9,8 +9,22 @@ import ListItemText from '@material-ui/core/ListItemText'
 
 import Link from './link'
 import Logo from './icons/logo'
+import makeStyles from '@material-ui/core/styles/makeStyles'
+
+const styles = makeStyles(theme => ({
+    logoText: {
+        color: 'white',
+        fontWeight: 300,
+        margin: 0,
+        maxWidth: 'fit-content',
+        [theme.breakpoints.down('xs')]: {
+            marginLeft: theme.spacing()
+        }
+    }
+}))
 
 export default () => {
+    const classes = styles()
     return <AppBar component='header' color='primary'>
         <Toolbar>
             <Container>
@@ -20,7 +34,7 @@ export default () => {
                             <Logo size='38px' fill='#56ceb5'/>
                         </ListItemIcon>
                         <ListItemText>
-                            <Typography variant='h5' style={{color: 'white'}}>walanda.org</Typography>
+                            <h2 className={classes.logoText}>walanda.org</h2>
                         </ListItemText>
                     </ListItem>
                 </Link>

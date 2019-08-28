@@ -44,6 +44,11 @@ const styles = makeStyles(theme => ({
         [theme.breakpoints.down('xs')]: {
             minWidth: 36
         }
+    },
+    lt: {
+        [theme.breakpoints.down('xs')]: {
+            fontSize: 14
+        }
     }
 }))
 
@@ -83,7 +88,7 @@ export default () => {
                     </Grid>
                     <Grid item xs={3} className={classes.centered}>
                         <Logo/>
-                        <Typography variant='h6'>Walanda Bursaries</Typography>
+                        <Typography variant='h6' className={classes.lt}>Walanda Bursaries</Typography>
                     </Grid>
                 </Grid>
             </Container>

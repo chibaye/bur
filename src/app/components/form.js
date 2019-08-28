@@ -50,6 +50,11 @@ const styles = theme => ({
         display: 'flex',
         flexDirection: 'column',
         width: '100%'
+    },
+    checkbox: {
+        [theme.breakpoints.down('xs')]: {
+            minWidth: 2
+        }
     }
 })
 
@@ -269,7 +274,7 @@ export default withStyles(styles, {withTheme: true})(connect(state => state, {
                 <div className={classes.actions}>
                     <List component='nav'>
                         <ListItem>
-                            <ListItemIcon>
+                            <ListItemIcon className={classes.checkbox}>
                                 <Icon name='check' fill={theme.palette.primary.main}/>
                             </ListItemIcon>
                             <ListItemText primary='I agree to the above Terms & Conditions'/>

@@ -1,1 +1,0 @@
-{"ast":null,"code":"import createMuiTheme from '@material-ui/core/styles/createMuiTheme';\nimport overrides from './overrides';\nimport palette from './palette';\nimport props from './props';\nexport default createMuiTheme({\n  overrides,\n  palette,\n  props\n});","map":null,"metadata":{},"sourceType":"module"}

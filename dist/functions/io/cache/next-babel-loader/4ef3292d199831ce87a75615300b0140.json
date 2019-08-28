@@ -1,1 +1,0 @@
-{"ast":null,"code":"export default {\n  primary: {\n    main: '#00A886',\n    light: 'rgba(1, 168, 134, 0.8)'\n  },\n  secondary: {\n    main: '#26312f'\n  },\n  background: {\n    default: '#E3EBEC'\n  }\n};","map":null,"metadata":{},"sourceType":"module"}

@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1053,6 +1053,11 @@ const styles = _material_ui_core_styles_makeStyles__WEBPACK_IMPORTED_MODULE_8___
     [theme.breakpoints.down('xs')]: {
       minWidth: 36
     }
+  },
+  lt: {
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 14
+    }
   }
 }));
 /* harmony default export */ __webpack_exports__["default"] = (() => {
@@ -1111,7 +1116,8 @@ const styles = _material_ui_core_styles_makeStyles__WEBPACK_IMPORTED_MODULE_8___
     xs: 3,
     className: classes.centered
   }, __jsx(_icons_logo__WEBPACK_IMPORTED_MODULE_10__["default"], null), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
-    variant: "h6"
+    variant: "h6",
+    className: classes.lt
   }, "Walanda Bursaries"))))));
 });
 
@@ -1225,6 +1231,11 @@ const styles = theme => ({
     display: 'flex',
     flexDirection: 'column',
     width: '100%'
+  },
+  checkbox: {
+    [theme.breakpoints.down('xs')]: {
+      minWidth: 2
+    }
   }
 });
 
@@ -1499,7 +1510,9 @@ const styles = theme => ({
       className: classes.actions
     }, __jsx(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_4___default.a, {
       component: "nav"
-    }, __jsx(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_7___default.a, null, __jsx(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_13___default.a, null, __jsx(_icons__WEBPACK_IMPORTED_MODULE_18__["default"], {
+    }, __jsx(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_7___default.a, null, __jsx(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_13___default.a, {
+      className: classes.checkbox
+    }, __jsx(_icons__WEBPACK_IMPORTED_MODULE_18__["default"], {
       name: "check",
       fill: theme.palette.primary.main
     })), __jsx(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_12___default.a, {
@@ -1551,6 +1564,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var _link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./link */ "./components/link.js");
 /* harmony import */ var _icons_logo__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./icons/logo */ "./components/icons/logo.js");
+/* harmony import */ var _material_ui_core_styles_makeStyles__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/styles/makeStyles */ "@material-ui/core/styles/makeStyles");
+/* harmony import */ var _material_ui_core_styles_makeStyles__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles_makeStyles__WEBPACK_IMPORTED_MODULE_10__);
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
@@ -1562,7 +1577,20 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
+const styles = _material_ui_core_styles_makeStyles__WEBPACK_IMPORTED_MODULE_10___default()(theme => ({
+  logoText: {
+    color: 'white',
+    fontWeight: 300,
+    margin: 0,
+    maxWidth: 'fit-content',
+    [theme.breakpoints.down('xs')]: {
+      marginLeft: theme.spacing()
+    }
+  }
+}));
 /* harmony default export */ __webpack_exports__["default"] = (() => {
+  const classes = styles();
   return __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2___default.a, {
     component: "header",
     color: "primary"
@@ -1571,11 +1599,8 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
   }, __jsx(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_4___default.a, null, __jsx(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_6___default.a, null, __jsx(_icons_logo__WEBPACK_IMPORTED_MODULE_9__["default"], {
     size: "38px",
     fill: "#56ceb5"
-  })), __jsx(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7___default.a, null, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
-    variant: "h5",
-    style: {
-      color: 'white'
-    }
+  })), __jsx(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7___default.a, null, __jsx("h2", {
+    className: classes.logoText
   }, "walanda.org")))))));
 });
 
@@ -1982,12 +2007,18 @@ const styles = _material_ui_core_styles_makeStyles__WEBPACK_IMPORTED_MODULE_4___
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: theme.spacing(3),
-    display: 'flex'
+    display: 'flex',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: 18
+    }
   },
   subtitle: {
     fontSize: 19,
     marginLeft: 4,
-    marginTop: 4
+    marginTop: 4,
+    [theme.breakpoints.down('xs')]: {
+      marginTop: 0
+    }
   },
   background: {
     backgroundColor: 'rgba(0, 0, 240, 0.05)'
@@ -2354,7 +2385,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 5:
+/***/ 3:
 /*!******************************!*\
   !*** multi ./pages/index.js ***!
   \******************************/

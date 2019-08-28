@@ -91307,6 +91307,9 @@ var styles = _material_ui_core_styles_makeStyles__WEBPACK_IMPORTED_MODULE_9___de
     }),
     listItemIcon: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, theme.breakpoints.down('xs'), {
       minWidth: 36
+    }),
+    lt: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({}, theme.breakpoints.down('xs'), {
+      fontSize: 14
     })
   };
 });
@@ -91366,7 +91369,8 @@ var styles = _material_ui_core_styles_makeStyles__WEBPACK_IMPORTED_MODULE_9___de
     xs: 3,
     className: classes.centered
   }, __jsx(_icons_logo__WEBPACK_IMPORTED_MODULE_11__["default"], null), __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Typography"], {
-    variant: "h6"
+    variant: "h6",
+    className: classes.lt
   }, "Walanda Bursaries"))))));
 });
 
@@ -91479,7 +91483,10 @@ var styles = function styles(theme) {
       display: 'flex',
       flexDirection: 'column',
       width: '100%'
-    }
+    },
+    checkbox: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])({}, theme.breakpoints.down('xs'), {
+      minWidth: 2
+    })
   };
 };
 
@@ -91767,7 +91774,9 @@ function (_Component) {
         className: classes.actions
       }, __jsx(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_10__["default"], {
         component: "nav"
-      }, __jsx(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_13__["default"], null, __jsx(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_19__["default"], null, __jsx(_icons__WEBPACK_IMPORTED_MODULE_24__["default"], {
+      }, __jsx(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_13__["default"], null, __jsx(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_19__["default"], {
+        className: classes.checkbox
+      }, __jsx(_icons__WEBPACK_IMPORTED_MODULE_24__["default"], {
         name: "check",
         fill: theme.palette.primary.main
       })), __jsx(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_18__["default"], {
@@ -91801,18 +91810,22 @@ function (_Component) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "../../node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "../../node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/AppBar */ "../../node_modules/@material-ui/core/esm/AppBar/index.js");
-/* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Toolbar */ "../../node_modules/@material-ui/core/esm/Toolbar/index.js");
-/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/ListItem */ "../../node_modules/@material-ui/core/esm/ListItem/index.js");
-/* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Container */ "../../node_modules/@material-ui/core/esm/Container/index.js");
-/* harmony import */ var _material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/ListItemIcon */ "../../node_modules/@material-ui/core/esm/ListItemIcon/index.js");
-/* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/ListItemText */ "../../node_modules/@material-ui/core/esm/ListItemText/index.js");
-/* harmony import */ var _link__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./link */ "./components/link.js");
-/* harmony import */ var _icons_logo__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./icons/logo */ "./components/icons/logo.js");
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "../../node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "../../node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "../../node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/AppBar */ "../../node_modules/@material-ui/core/esm/AppBar/index.js");
+/* harmony import */ var _material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Toolbar */ "../../node_modules/@material-ui/core/esm/Toolbar/index.js");
+/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/ListItem */ "../../node_modules/@material-ui/core/esm/ListItem/index.js");
+/* harmony import */ var _material_ui_core_Container__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Container */ "../../node_modules/@material-ui/core/esm/Container/index.js");
+/* harmony import */ var _material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/ListItemIcon */ "../../node_modules/@material-ui/core/esm/ListItemIcon/index.js");
+/* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/ListItemText */ "../../node_modules/@material-ui/core/esm/ListItemText/index.js");
+/* harmony import */ var _link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./link */ "./components/link.js");
+/* harmony import */ var _icons_logo__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./icons/logo */ "./components/icons/logo.js");
+/* harmony import */ var _material_ui_core_styles_makeStyles__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/styles/makeStyles */ "../../node_modules/@material-ui/core/styles/makeStyles.js");
+/* harmony import */ var _material_ui_core_styles_makeStyles__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles_makeStyles__WEBPACK_IMPORTED_MODULE_11__);
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
@@ -91823,20 +91836,31 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
+
+var styles = _material_ui_core_styles_makeStyles__WEBPACK_IMPORTED_MODULE_11___default()(function (theme) {
+  return {
+    logoText: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
+      color: 'white',
+      fontWeight: 300,
+      margin: 0,
+      maxWidth: 'fit-content'
+    }, theme.breakpoints.down('xs'), {
+      marginLeft: theme.spacing()
+    })
+  };
+});
 /* harmony default export */ __webpack_exports__["default"] = (function () {
-  return __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  var classes = styles();
+  return __jsx(_material_ui_core_AppBar__WEBPACK_IMPORTED_MODULE_3__["default"], {
     component: "header",
     color: "primary"
-  }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_3__["default"], null, __jsx(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_5__["default"], null, __jsx(_link__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, __jsx(_material_ui_core_Toolbar__WEBPACK_IMPORTED_MODULE_4__["default"], null, __jsx(_material_ui_core_Container__WEBPACK_IMPORTED_MODULE_6__["default"], null, __jsx(_link__WEBPACK_IMPORTED_MODULE_9__["default"], {
     href: "/"
-  }, __jsx(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_4__["default"], null, __jsx(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_6__["default"], null, __jsx(_icons_logo__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }, __jsx(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_5__["default"], null, __jsx(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], null, __jsx(_icons_logo__WEBPACK_IMPORTED_MODULE_10__["default"], {
     size: "38px",
     fill: "#56ceb5"
-  })), __jsx(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__["default"], null, __jsx(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
-    variant: "h5",
-    style: {
-      color: 'white'
-    }
+  })), __jsx(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], null, __jsx("h2", {
+    className: classes.logoText
   }, "walanda.org")))))));
 });
 
@@ -92248,17 +92272,21 @@ var styles = _material_ui_core_styles_makeStyles__WEBPACK_IMPORTED_MODULE_5___de
       marginTop: theme.spacing(4),
       marginBottom: theme.spacing(4)
     },
-    title: {
+    title: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
       fontSize: 24,
       fontWeight: 'bold',
       marginBottom: theme.spacing(3),
       display: 'flex'
-    },
-    subtitle: {
+    }, theme.breakpoints.down('xs'), {
+      fontSize: 18
+    }),
+    subtitle: Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])({
       fontSize: 19,
       marginLeft: 4,
       marginTop: 4
-    },
+    }, theme.breakpoints.down('xs'), {
+      marginTop: 0
+    }),
     background: {
       backgroundColor: 'rgba(0, 0, 240, 0.05)'
     },
@@ -92711,7 +92739,7 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 /***/ }),
 
-/***/ 2:
+/***/ 0:
 /*!*************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F&absolutePagePath=%2FUsers%2Fme%2Fdev%2Fbur%2Fsrc%2Fapp%2Fpages%2Findex.js ***!
   \*************************************************************************************************************************/
@@ -92734,5 +92762,5 @@ module.exports = dll_ce06d5e1f0ed67802612;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=index.js.map

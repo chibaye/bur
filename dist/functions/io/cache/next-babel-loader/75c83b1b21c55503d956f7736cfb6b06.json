@@ -1,1 +1,0 @@
-{"ast":null,"code":"var __jsx = React.createElement;\nimport React from 'react';\nimport Header from './header';\nimport Footer from './footer';\nexport default (({\n  children\n}) => __jsx(React.Fragment, null, __jsx(Header, null), __jsx(\"main\", null, children), __jsx(Footer, null)));","map":null,"metadata":{},"sourceType":"module"}
