@@ -1,5 +1,4 @@
 import React from 'react'
-import {Typography} from '@material-ui/core'
 import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import ListItem from '@material-ui/core/ListItem'
@@ -20,6 +19,13 @@ const styles = makeStyles(theme => ({
         [theme.breakpoints.down('xs')]: {
             marginLeft: theme.spacing()
         }
+    },
+    container: {
+        paddingLeft: 0,
+        paddingRight: 0,
+        [theme.breakpoints.down('xs')]: {
+            paddingLeft: theme.spacing(1.5)
+        }
     }
 }))
 
@@ -27,7 +33,7 @@ export default () => {
     const classes = styles()
     return <AppBar component='header' color='primary'>
         <Toolbar>
-            <Container>
+            <Container className={classes.container}>
                 <Link href='/'>
                     <ListItem>
                         <ListItemIcon>

@@ -1,6 +1,6 @@
 import {FORM} from '../types'
 import Router from 'next/router'
-import {firebase, firestore, storage} from '../../firebase'
+import {firebase, firestore, storage, timestamp} from '../../firebase'
 
 const upload = (name, file, index = 0) => dispatch => {
     const task = storage.ref(`bursaries/${file.name}`).put(file, {contentType: 'image/jpeg'})
@@ -31,11 +31,13 @@ export const fileChange = ({target: {name, files}}) => dispatch => {
 
 export const post = data => async dispatch => {
     dispatch({type: FORM.LOADING})
+    data.created = timestamp
+    data.updated = timestamp
 
     try {
         await firestore.collection('bursaries').add(data)
         await dispatch({type: FORM.LOADING})
-        Router.replace('/thank-you')
+        await Router.replace('/thank-you')
     } catch (err) {
         alert('Something went wrong, try again.')
         console.error(err)

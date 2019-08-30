@@ -3,6 +3,10 @@ export default {
         elevation: 0,
         position: 'relative'
     },
+    MuiButton: {
+        color: 'primary',
+        variant: 'contained'
+    },
     MuiContainer: {
         maxWidth: 'md'
     },
@@ -11,7 +15,9 @@ export default {
       disableGutters: true
     },
     MuiTextField: {
-        fullWidth: true
+        fullWidth: true,
+        margin: 'dense',
+        variant: 'outlined'
     },
     MuiToolbar: {
         disableGutters: true

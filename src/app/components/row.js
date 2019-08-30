@@ -34,17 +34,21 @@ const styles = makeStyles(theme => ({
     }
 }))
 
-export default ({children, title, subtitle, disableBackground}) => {
+export default ({children, title, subtitle, disableBackground, disableGutters}) => {
     const classes = styles()
     return <div className={classes.root}>
-        {title && <Container maxWidth='sm'>
+        {title && <Container maxWidth='sm' disab>
             <Typography component='div' variant='h2' className={classes.title}>
                 {title}
                 {subtitle && <Typography variant='h2' className={classes.subtitle}>{subtitle}</Typography>}
             </Typography>
         </Container>}
-        <Container className={clsx(classes.container, {[classes.background]: !disableBackground})}>
-            <Container maxWidth='sm'>{children}</Container>
-        </Container>
+
+        {disableGutters ?
+            <Container>{children}</Container> :
+            <Container className={clsx(classes.container, {[classes.background]: !disableBackground})}>
+                <Container maxWidth='sm'>{children}</Container>
+            </Container>
+        }
     </div>
 }

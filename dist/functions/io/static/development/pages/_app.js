@@ -22755,6 +22755,10 @@ __webpack_require__.r(__webpack_exports__);
     elevation: 0,
     position: 'relative'
   },
+  MuiButton: {
+    color: 'primary',
+    variant: 'contained'
+  },
   MuiContainer: {
     maxWidth: 'md'
   },
@@ -22763,7 +22767,9 @@ __webpack_require__.r(__webpack_exports__);
     disableGutters: true
   },
   MuiTextField: {
-    fullWidth: true
+    fullWidth: true,
+    margin: 'dense',
+    variant: 'outlined'
   },
   MuiToolbar: {
     disableGutters: true

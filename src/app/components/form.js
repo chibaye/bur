@@ -280,7 +280,7 @@ export default withStyles(styles, {withTheme: true})(connect(state => state, {
                             <ListItemText primary='I agree to the above Terms & Conditions'/>
                         </ListItem>
                     </List>
-                    <Button type='submit' color='primary' size='large' variant='contained'>
+                    <Button type='submit' size='large'>
                         <Typography className={classes.typography}>Submit Application</Typography>
                         <CircularProgress size={20} thickness={4} className={clsx(classes.progress, {[classes.show]: loading})}/>
                     </Button>
